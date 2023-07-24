@@ -15,8 +15,8 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/demo")
-public class ControllerDemo {
+@RequestMapping("/static")
+public class ControllerStaticRL {
         // must declare this
         public ResponseEntity<String> fallbackRateLimiter(RequestNotPermitted e) {
                 return new ResponseEntity<String>("Rate Limit Exceeded",
@@ -38,4 +38,5 @@ public class ControllerDemo {
                         throw new HttpException(HttpStatus.UNAUTHORIZED, "User ga ada");
                 return ResponseEntity.ok(new UserDto());
         }
+        
 }

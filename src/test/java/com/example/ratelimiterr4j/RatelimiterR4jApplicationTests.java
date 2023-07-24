@@ -10,4 +10,7 @@ class RatelimiterR4jApplicationTests {
 	void contextLoads() {
 	}
 
+	void testParallel() {
+		
+	}
 }

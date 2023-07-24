@@ -1,10 +1,13 @@
-@baseUrl = http://localhost:8080/demo
+@baseUrl = http://localhost:8080
 
-// LOGIN #1
-GET  {{baseUrl}}/hello1
+GET  {{baseUrl}}/static/hello1
 
 ###
-// LOGIN #2
 
-GET  {{baseUrl}}/hello2
+GET  {{baseUrl}}/static/hello2
+
+###
+
+GET  {{baseUrl}}/dynamic/hello1
+
 
